@@ -9,7 +9,7 @@ botaoAdicionar.addEventListener("click", function() {
         var erroAjax = document.querySelector("#erro-ajax");
 
         if (xhr.status == 200) {
-            erroAjax.classList.add();
+            erroAjax.classList.add("invisivel");
             var resposta = xhr.responseText;
             var pacientes = JSON.parse(resposta);
 
@@ -17,7 +17,7 @@ botaoAdicionar.addEventListener("click", function() {
                 adicionaPacienteNaTabela(paciente);
             });
         } else {
-            erroAjax.classList.remove();
+            erroAjax.classList.remove("invisivel");
 }
 
         }
