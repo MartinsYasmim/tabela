@@ -9,7 +9,7 @@ botaoAdicionar.addEventListener("click", function() {
         var erroAjax = document.querySelector("#erro-ajax");
 
         if (xhr.status == 200) {
-            erroAjax.classList.add("invisivel");
+            erroAjax.classList.add();
             var resposta = xhr.responseText;
             var pacientes = JSON.parse(resposta);
 
