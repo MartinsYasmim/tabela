@@ -18,6 +18,9 @@ botaoAdicionar.addEventListener("click", function() {
             });
         } else {
             erroAjax.classList.remove("invisivel");
+    erroAjax.textContent = `Erro ao carregar pacientes. Status: ${xhr.status}`;
+}
+
         }
     });
 
