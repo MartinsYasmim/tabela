@@ -47,7 +47,7 @@ function calculaImc(peso, altura) {
 
 function validaPeso(peso) {
 
-    if (peso >= 30 && peso <= 3000) {
+    if (peso >= 30 && peso <= 300) {
         return true;
     } else {
         return false;
