@@ -12,15 +12,12 @@ botaoAdicionar.addEventListener("click", function() {
             erroAjax.classList.add("invisivel");
             var resposta = xhr.responseText;
             var pacientes = JSON.parse(resposta);
-            
-            <button id="limpar-tabela">Limpar Tabela</button>
 
             pacientes.forEach(function(paciente) {
                 adicionaPacienteNaTabela(paciente);
             });
         } else {
             erroAjax.classList.remove("invisivel");
-    erroAjax.textContent = `Erro ao carregar pacientes. Status: ${xhr.status}`;
 }
 
         }
